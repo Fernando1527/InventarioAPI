@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Nueva Categoría";
+}
+
+<h2>Nueva Categoría</h2>
+
+<hr />
+
+<form>
+
+    <div class="mb-3">
+
+        <label class="form-label">
+            Nombre de la Categoría
+        </label>
+
+        <input type="text"
+               class="form-control"
+               placeholder="Ingrese nombre" />
+
+    </div>
+
+    <button type="submit"
+            class="btn btn-success">
+        Guardar
+    </button>
+
+    <a asp-action="Index"
+       class="btn btn-secondary">
+        Regresar
+    </a>
+
+</form>

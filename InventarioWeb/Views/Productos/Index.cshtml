@@ -1,0 +1,69 @@
+﻿@{
+    ViewData["Title"] = "Productos";
+}
+
+<h2 class="mb-4">Administración de Productos</h2>
+
+<div class="mb-3">
+    <a asp-action="Create"
+       class="btn btn-success">
+        Nuevo Producto
+    </a>
+</div>
+
+<table class="table table-bordered table-striped">
+
+    <thead class="table-dark">
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Descripción</th>
+            <th>Precio</th>
+            <th>Cantidad</th>
+            <th>Categoría</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        <tr>
+            <td>1</td>
+            <td>Laptop HP</td>
+            <td>Core i5 16GB RAM</td>
+            <td>$850.00</td>
+            <td>10</td>
+            <td>Laptops</td>
+            <td>
+                <a asp-action="Edit"S
+                   class="btn btn-warning btn-sm">
+                    Editar
+                </a>
+
+                <button class="btn btn-danger btn-sm">
+                    Eliminar
+                </button>
+            </td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Monitor Samsung</td>
+            <td>24 pulgadas</td>
+            <td>$180.00</td>
+            <td>15</td>
+            <td>Monitores</td>
+            <td>
+                <button class="btn btn-warning btn-sm">
+                    Editar
+                </button>
+
+                <button class="btn btn-danger btn-sm">
+                    Eliminar
+                </button>
+            </td>
+        </tr>
+
+    </tbody>
+
+</table>

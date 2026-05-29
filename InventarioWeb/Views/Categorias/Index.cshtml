@@ -1,0 +1,44 @@
+﻿@model List<InventarioWeb.Models.Categoria>
+
+@{
+    ViewData["Title"] = "Categorías";
+}
+
+<h2 class="mb-4">Administración de Categorías</h2>
+
+<div class="mb-3">
+    <a asp-action="Create"
+       class="btn btn-success">
+        Nueva Categoría
+    </a>
+</div>
+
+<table class="table table-bordered table-striped">
+
+    <thead class="table-dark">
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        @foreach (var categoria in Model)
+        {
+            <tr>
+                <td>@categoria.IdCategoria</td>
+                <td>@categoria.Nombre</td>
+                <td>
+                    <a asp-action="Edit"
+                       class="btn btn-warning btn-sm">
+                        Editar
+                    </a>
+                </td>
+            </tr>
+        }
+
+    </tbody>
+
+</table>
